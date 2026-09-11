@@ -1,0 +1,213 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Путешественник</title>
+        
+        <style>
+            * {
+        box-sizing: border-box; 
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        background-color: #fdfaf5; 
+        color: #333; 
+        line-height: 1.6; 
+    }
+
+    
+    header {
+        background-color: #FF8C00; 
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+
+    
+    main {
+        max-width: 1100px; 
+        margin: 0 auto;    
+        padding: 40px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px; 
+    }
+
+    
+    .card, aside {
+        background-color: #ffffff; 
+        border: 1px solid #f0e6d6; 
+        border-radius: 12px;       
+        padding: 30px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); 
+        transition: transform 0.3s ease; 
+        
+        
+        flex: 1 1 300px; 
+        max-width: 450px;
+    }
+
+    
+    .card:hover, aside:hover {
+        transform: translateY(-5px); 
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        color: #d2691e; 
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        border-bottom: 2px solid #FFE4B5; 
+        padding-bottom: 10px;
+    }
+
+    
+    ul, ol {
+        padding-left: 20px;
+    }
+    
+    li {
+        margin-bottom: 8px;
+    }
+
+    
+    aside img {
+        display: block;
+        margin: 20px auto 0; 
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+   
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        
+    }
+
+    label {
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #eee;
+        border-radius: 8px;
+        font-family: inherit;
+        font-size: 1rem;
+        transition: border-color 0.3s;
+    }
+
+    
+    input:focus, textarea:focus {
+        outline: none;
+        border-color: #FF8C00;
+    }
+
+    
+    button {
+        background-color: #FF8C00;
+        color: white;
+        border: none;
+        padding: 15px;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background-color: #e67e00; 
+    }
+
+    
+    footer {
+        background-color: #2c2c2c;
+        color: #aaa;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 0.9rem;
+    }
+    
+    .form-section{
+        flex: 1 1 100%;
+        max-width: 800px;
+        margin-left: auto;   
+    margin-right: auto;  
+    margin-top: 20px;    
+    width: 300%;         
+    box-sizing: border-box;
+        
+    }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Расулов Азизджон - Путешественник</h1>
+        </header>
+    <main> 
+        <section class="card">
+            <h2>Навыки</h2>
+            <ul>
+                <li>Знание иностранных языков</li>
+                <li>умение ориентироваться по карте</li>
+                <li>Навыки выживания в дикой природе</li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Посещенные страны</h2>
+            <ol>
+            <li>Узбекистан</li>
+            <li>Турция</li>
+            <li>Казахстан</li>
+            </ol>
+        </section>
+        <br><br>
+        <aside>Любимый город - Томск <p> <img src="https://obzor.city/data/images/news_2024/09/aero_autumn/7.jpg" alt="Фото прекраснейшего Томска" width="150" height="150" /> </p> </aside> 
+        <br><br>
+    </main>
+        <section class="card form-section">
+            <h2>Связаться со мной</h2>
+        <form action="#" method="post">
+        <label for="nameInput">Имя</label>
+        <input type="text" id="nameInput" name="username" placeholder="Введите ваше имя"> 
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="usermail" placeholder="example@mail.ru">
+    <br><br>
+    <label for="message">Сообщение:</label>
+    <textarea id="message" name="usermessage" placeholder="Напишите здесь свой текст..."></textarea>
+    <br><br>
+    <button type="submit">Отправить</button>
+    </form>
+    
+    </section>
+    
+    
+    
+    <br><br>
+    
+    <footer>
+        <p>&copy; 2024 Расулов Азизджон. Все права защищены.</p>
+    </footer>
+    
+    </body>
+</html>
+    
